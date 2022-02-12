@@ -1,5 +1,4 @@
 package zadanie1termin1;
-
 import java.time.LocalTime;
 
 public class Zadanie1Test {

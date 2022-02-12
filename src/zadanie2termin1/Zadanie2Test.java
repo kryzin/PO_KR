@@ -18,11 +18,10 @@ public class Zadanie2Test {
     }
 
     public static <T extends Iterable> void print(T t){
-        ArrayList<Integer> i = new ArrayList<>();
-
         t.forEach(x -> {
             System.out.print(x);
             System.out.print(", ");
         });
+        System.out.println("");
     }
 }
