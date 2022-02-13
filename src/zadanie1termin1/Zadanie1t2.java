@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Zadanie1t2 {
     public static void main(String[] args){
 
-        Integer[] sortedInts = new Integer[]{5,6,7,6,5};  // tylko 7
+        Integer[] sortedInts = new Integer[]{5,6,7,6,5,9,0};  // 7,9,0
         LocalTime[] czasy = new LocalTime[]{
                 LocalTime.MIN,
                 LocalTime.MIN.plusHours(2),
@@ -21,9 +21,12 @@ public class Zadanie1t2 {
     static class ArrayUtil{
         public static <T extends Comparable<T>> ArrayList<T> removeRepated(T[] array){
             ArrayList<T> list = new ArrayList<>();
-            for(int i=0; i<array.length-1; i++){
+            for(int i=0; i<=array.length-1; i++){
                 if(!list.contains(array[i])){
                     list.add(array[i]);
+                }
+                else {
+                    list.remove(array[i]);
                 }
             }
             return list;
